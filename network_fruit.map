@@ -1,0 +1,10 @@
+stations:
+bond_square,20,6
+apple_avenue,7,7
+orange_junction,6,1
+space_port,1,11
+
+connections:
+bond_square-apple_avenue
+apple_avenue-orange_junction
+orange_junction-space_port

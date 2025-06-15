@@ -1,0 +1,10 @@
+stations:
+beginning,0,0
+near,1,0
+far,1,3
+terminus,0,3
+connections:
+beginning-near
+beginning-terminus
+near-far
+terminus-far

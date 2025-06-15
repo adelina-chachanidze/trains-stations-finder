@@ -1,0 +1,17 @@
+stations:
+beethoven,1,6
+verdi,7,1
+albinoni,1,1
+handel,3,14
+mozart,14,9
+part,10,0
+
+connections:
+beethoven-handel
+handel-mozart
+beethoven-verdi
+verdi-part
+verdi-albinoni
+beethoven-albinoni
+albinoni-mozart
+mozart-part
