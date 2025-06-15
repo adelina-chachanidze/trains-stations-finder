@@ -47,6 +47,14 @@ func main() {
 		os.Exit(1)
 	}
 
+	// Display the routes
+	paths := findAllShortestPaths(network, start, end)
+	fmt.Println("Routes:")
+	for i, path := range paths {
+		fmt.Printf("Route %d: %s\n", i+1, strings.Join(path, " -> "))
+	}
+	fmt.Println("\nTrain Movements:")
+
 	for _, turn := range moves {
 		fmt.Println(turn)
 	}
