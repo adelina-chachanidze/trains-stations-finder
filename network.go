@@ -75,7 +75,7 @@ func ParseNetwork(path string) (*Network, error) {
 				yStr := strings.TrimSpace(parts[2])
 				x, err1 := strconv.Atoi(xStr)
 				y, err2 := strconv.Atoi(yStr)
-				if err1 != nil || err2 != nil || x <= 0 || y <= 0 {
+				if err1 != nil || err2 != nil || x < 0 || y < 0 {
 					return nil, fmt.Errorf("invalid coordinates for station: %s", name)
 				}
 				coordKey := fmt.Sprintf("%d,%d", x, y)
